@@ -13133,11 +13133,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "c:\\users\\fabio navarro\\documents\\visual studio 2017\\Projects\\Navento\\Navento\\Navento.csproj",
+      "projectUniqueName": "C:\\Users\\Fabio Navarro\\documents\\visual studio 2017\\Projects\\Navento\\Navento\\Navento.csproj",
       "projectName": "Navento",
-      "projectPath": "c:\\users\\fabio navarro\\documents\\visual studio 2017\\Projects\\Navento\\Navento\\Navento.csproj",
+      "projectPath": "C:\\Users\\Fabio Navarro\\documents\\visual studio 2017\\Projects\\Navento\\Navento\\Navento.csproj",
       "packagesPath": "C:\\Users\\Fabio Navarro\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\fabio navarro\\documents\\visual studio 2017\\Projects\\Navento\\Navento\\obj\\",
+      "outputPath": "C:\\Users\\Fabio Navarro\\documents\\visual studio 2017\\Projects\\Navento\\Navento\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

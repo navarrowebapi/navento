@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Navento.Data;
 using Navento.Models;
 
-namespace Navento
+namespace Navento.Controllers
 {
     public class ProdutosController : Controller
     {

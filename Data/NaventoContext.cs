@@ -16,12 +16,12 @@ namespace Navento.Data
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<PedidoItem> PedidoItems { get; set; }
-        public DbSet<PedidosVM> PedidosVms { get; set; }
+        //public DbSet<PedidoVm> PedidosVms { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
+            modelBuilder.Entity<Pedido>().HasIndex(i => i.UsuarioId).IsUnique(false);
             modelBuilder.Entity<PedidoItem>().HasKey(t => new {t.PedidoId, t.ProdutoId});
 
         }

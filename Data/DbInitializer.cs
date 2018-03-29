@@ -29,24 +29,24 @@ namespace Navento.Data
             context.Produtos.AddRange(produtos);
             context.SaveChanges();
 
-            var pedido = new Pedido {UsuarioId = usuario.Id, Data = DateTime.Now };
+            var pedido = new Pedido { UsuarioId = usuario.Id, Data = DateTime.Now };
             context.Pedidos.Add(pedido);
             context.SaveChanges();
 
-            var produtosComprados = new List<Produto> {produto1, produto3};
+            var produtosComprados = new List<Produto> { produto1, produto3 };
             //Salvando cada Item de Pedido
             foreach (var produto in produtosComprados)
             {
-                var pedidoItem = new PedidoItem { PedidoId = pedido.Id, ProdutoId = produto.Id};
+                var pedidoItem = new PedidoItem { PedidoId = pedido.Id, ProdutoId = produto.Id };
                 context.PedidoItems.Add(pedidoItem);
                 context.SaveChanges();
             }
 
             ////PARA uma visualização/cenário de Administrador / SAD-SIG
-  
+
             //foreach (var prods in produtosComprados)
             //{
-            //    var pedidosVm = new PedidosVM { PedidoId = pedido.Id, Produtos = produtosComprados, Preco = produtosComprados.Sum(x=>x.PrecoUnitario), Quantidade = produtosComprados.Count};
+            //    var pedidosVm = new PedidoVm { PedidoId = pedido.Id, Produtos = produtosComprados, Preco = produtosComprados.Sum(x=>x.PrecoUnitario), Quantidade = produtosComprados.Count};
             //    context.PedidosVms.Add(pedidosVm);
             //    context.SaveChanges();
             //}
